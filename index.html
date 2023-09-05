@@ -3,12 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculater</title>
-    <link href="main.css">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Orbitron&family=Passion+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <div class="container">
+        <div id="bmi-box">
+            <div id="bmi-calculater">
+                <h2>BMI Calculater</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>Weight(kg) </p>
+                    </div>
+                    <div class="col-md-9">
+                        <input class="form-control" type="number" id="weight">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>Height(m)</p>
+                    </div>
+                    <div class="col-md-9">
+                        <input class="form-control" type="number" id="height">
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-block" onclick="CalculateBMI();">Calculate</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-danger btn-block">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bmi-result">
+                <div class="row">
+                        <div class="col-md-12">
+                            <p id="result">24</p>
+                            <p id="result-statu">Normal</p>
+                        </div>
+                </div>
+            </div>
+
+            <div id="bmi-info">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p><18.5</p>
+                        <p>Under weight</p>
+                    </div>
+                        <div class="col-md-3">
+                            <p>18.5-25</p>
+                            <p>Normal</p>
+                        </div>         
+                            <div class="col-md-3">
+                                <p>25-30</p>
+                                <p>Over weight</p>
+                            </div>  
+                                <div class="col-md-3">
+                                    <p>>30</p>
+                                    <p>Obese</p>
+                                </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
 </body>
 
 <script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
